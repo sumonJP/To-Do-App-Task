@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todo application"
+        android:textSize="18sp"
+        android:background="#CCCCCC"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/todoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg" />
+
+    <!-- Description Input -->
+    <EditText
+        android:id="@+id/todoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:minHeight="100dp" />
+
+    <!-- Date Picker -->
+    <EditText
+        android:id="@+id/todoDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:focusable="false"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg" />
+
+    <!-- Dropdown -->
+    <Spinner
+        android:id="@+id/todoType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Priority Section -->
+    <RadioGroup
+        android:id="@+id/priorityGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/highPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority High" />
+
+        <RadioButton
+            android:id="@+id/mediumPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority Medium" />
+
+        <RadioButton
+            android:id="@+id/lowPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority Low" />
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <!-- Todo List Header -->
+    <TextView
+        android:id="@+id/todoListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todo List"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:background="#CCCCCC"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/todoListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+
+</LinearLayout>

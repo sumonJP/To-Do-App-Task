@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Todo Application</string>
+    <string-array name="todo_type">
+        <item>Todo Type</item>
+        <item>Study</item>
+        <item>Outing</item>
+        <item>Date</item>
+        <item>Meetup</item>
+        <item>Shopping</item>
+        <item>Tour</item>
+    </string-array>
+</resources>
